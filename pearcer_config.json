@@ -1,36 +1,76 @@
 {
-    "interface": "\\Device\\NPF_{3AC70607-0EA1-498F-9E50-C9BBC09531D1}",
-    "filter": "",
-    "blacklist_ips": [
-        "8.8.8.8"
-    ],
-    "whitelist_ips": [],
-    "attack_threshold": 50,
-    "highlight_colors": {
-        "normal": "#FFFFFF",
-        "suspicious": "#FFA500",
-        "attack": "#FF0000",
-        "voip": "#0000FF",
-        "encrypted": "#008000",
-        "http": "#800080",
-        "tls": "#00FFFF"
+  "attack_threshold": 50,
+  "auto_scroll": true,
+  "auto_vuln_scan": false,
+  "batch_size": 25,
+  "blacklist_ips": [],
+  "bpf_filter": "",
+  "capture_mode": "live",
+  "colors": {
+    "arp": {
+      "bg": "#fafad2",
+      "fg": "#000000"
     },
-    "log_file": "packets.log",
-    "pcap_file": "capture.pcap",
-    "speed": "extreme",
-    "theme": "dark",
-    "protocols": {
-        "tcp": true,
-        "udp": true,
-        "icmp": true,
-        "dccp": true,
-        "tls": true,
-        "http": true,
-        "quic": true,
-        "websocket": true,
-        "sip": true
+    "attack": {
+      "bg": "#DC143C",
+      "fg": "#FFFFFF"
     },
-    "filter_mode": "All traffic",
-    "headless": false,
-    "remote_port": 9999
+    "dns": {
+      "bg": "#fff2cc",
+      "fg": "#000000"
+    },
+    "error": {
+      "bg": "#8B0000",
+      "fg": "#FFFFFF"
+    },
+    "http": {
+      "bg": "#d5e8d4",
+      "fg": "#000000"
+    },
+    "icmp": {
+      "bg": "#e1d5e7",
+      "fg": "#000000"
+    },
+    "suspicious": {
+      "bg": "#FF8C00",
+      "fg": "#FFFFFF"
+    },
+    "tcp": {
+      "bg": "#E6E6FA",
+      "fg": "#000000"
+    },
+    "tls": {
+      "bg": "#f5f5f5",
+      "fg": "#000000"
+    },
+    "udp": {
+      "bg": "#dae8fc",
+      "fg": "#000000"
+    }
+  },
+  "display_filter": "",
+  "filter_mode": "all",
+  "font_size": 10,
+  "gui_update_interval_ms": 500,
+  "headless": false,
+  "interface": "eth0",
+  "log_file": "pearcer.log",
+  "max_captured_packets": 50000,
+  "max_displayed_packets": 1000,
+  "packet_queue_size": 5000,
+  "pcap_output": "capture.pcap",
+  "promiscuous": true,
+  "protocols": {
+    "arp": true,
+    "dns": true,
+    "http": true,
+    "icmp": true,
+    "tcp": true,
+    "tls": true,
+    "udp": true
+  },
+  "remote_agent_port": 9999,
+  "show_hex": true,
+  "theme": "dark",
+  "whitelist_ips": []
 }
